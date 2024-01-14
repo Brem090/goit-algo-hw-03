@@ -1,7 +1,6 @@
 import turtle
 
 def koch_snowflake(turtle, iterations, length):
-
     if iterations == 0:
         turtle.forward(length)
     else:
@@ -15,7 +14,6 @@ def koch_snowflake(turtle, iterations, length):
         koch_snowflake(turtle, iterations - 1, length)
 
 def create_snowflake(iterations, length=200):
-
     window = turtle.Screen()
     window.bgcolor("white")
 
@@ -28,4 +26,5 @@ def create_snowflake(iterations, length=200):
 
     window.mainloop()
 
-create_snowflake(iterations=3) 
+iterations = int(input("Введіть рівень рекурсії для сніжинки: "))
+create_snowflake(iterations=iterations)
